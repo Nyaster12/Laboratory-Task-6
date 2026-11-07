@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Laboratory Task 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Sign Up</h2>
+        
+        <form id="signupForm" novalidate>
+            <!-- First Name Field -->
+            <div class="form-group" id="firstNameGroup">
+                <span class="error-message" id="firstNameError">First Name is required</span>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+            </div>
+
+            <!-- Middle Initial Field -->
+            <div class="form-group" id="middleInitialGroup">
+                <span class="error-message" id="middleInitialError">Middle Initial is required</span>
+                <input type="text" id="middleInitial" name="middleInitial" placeholder="Middle Initial">
+            </div>
+
+            <!-- Last Name Field -->
+            <div class="form-group" id="lastNameGroup">
+                <span class="error-message" id="lastNameError">Last Name is required</span>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+            </div>
+
+            <!-- Email Address Field -->
+            <div class="form-group" id="emailGroup">
+                <span class="error-message" id="emailError">Email is required</span>
+                <input type="email" id="email" name="email" placeholder="Email Address">
+            </div>
+
+            <!-- Action Buttons -->
+            <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+            <button type="button" id="resetBtn" class="btn btn-secondary">Reset</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
